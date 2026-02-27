@@ -127,9 +127,9 @@ section{
 .nav-link:hover{
     color: var(--mount-meadow)!important;
 }
-.navbar-collapse.active {
-    display: block !important;
-  }
+.navbar-collapse{
+    display: none;
+}
 .hero-div{
     flex: 1;
     flex-direction: column;
