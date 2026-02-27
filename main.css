@@ -127,8 +127,23 @@ section{
 .nav-link:hover{
     color: var(--mount-meadow)!important;
 }
-.navbar-collapse{
-    display: none;
+.navbar-collapse.active {
+    display: block !important;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .nav-link {
+    color: var(--night-rider) !important;
+  }
+}
 }
 .hero-div{
     flex: 1;
