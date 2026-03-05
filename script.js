@@ -1,15 +1,17 @@
 
 
-$(document).ready(function(){
 
+$(document).ready(function(){
     // wow initiation
     new WOW().init();
-
     // navigation bar toggle
     $('#navbar-toggler').click(function(){
         $('.navbar-collapse').slideToggle(400);
     });
-
+    // close navbar when a nav link is clicked
+    $('.nav-link').click(function(){
+        $('.navbar-collapse').slideUp(400);
+    });
     // navbar bg change on scroll
     $(window).scroll(function(){
         let pos = $(window).scrollTop();
@@ -19,7 +21,6 @@ $(document).ready(function(){
             $('.navbar').removeClass('cng-navbar');
         }
     });
-
     // sample video popup
     $(document).ready(function() {
         $('.popup-youtube').magnificPopup({
@@ -32,7 +33,6 @@ $(document).ready(function(){
             fixedContentPos: false
         });
     });
-
     // team carousel 
     $('.team .owl-carousel').owlCarousel({
         loop: true,
@@ -53,13 +53,11 @@ $(document).ready(function(){
             }
         }
     });
-
     // faq accordion
     $('.faq-head').each(function(){
         $(this).click(function(){
             $(this).next().toggleClass('show-faq-content');
             let icon = $(this).children('span').children("i").attr('class');
-
             if(icon == "fas fa-plus"){
                 $(this).children('span').html('<i class = "fas fa-minus"></i>');
             } else {
@@ -67,7 +65,6 @@ $(document).ready(function(){
             }
         });
     });
-
     // testimonial carousel 
     $('.testimonial .owl-carousel').owlCarousel({
         loop: true,
@@ -76,5 +73,6 @@ $(document).ready(function(){
         nav: false,
         items: 1
     });
-
 });
+
+
