@@ -4,19 +4,14 @@
 $(document).ready(function(){
     // wow initiation
     new WOW().init();
-    // navigation bar toggle
-    $('#navbar-toggler').click(function(){
-        $('.navbar-collapse').slideToggle(400);
-    });
-    // close navbar when a nav link is clicked
-$('.nav-link').click(function(e){
-    e.preventDefault();
-    let target = $(this).attr('href');
-    $('.navbar-collapse').slideUp(400, function(){
-        window.location = target;
-    });
+   // navigation bar toggle
+$('#navbar-toggler').click(function(){
+    $('.navbar-collapse').slideToggle(400);
 });
-    });
+// close navbar when a nav link is clicked
+$('.nav-link').click(function(){
+    $('.navbar-collapse').slideUp(400);
+});
     // navbar bg change on scroll
     $(window).scroll(function(){
         let pos = $(window).scrollTop();
