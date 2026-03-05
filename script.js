@@ -9,8 +9,13 @@ $(document).ready(function(){
         $('.navbar-collapse').slideToggle(400);
     });
     // close navbar when a nav link is clicked
-    $('.nav-link').click(function(){
-        $('.navbar-collapse').slideUp(400);
+$('.nav-link').click(function(e){
+    e.preventDefault();
+    let target = $(this).attr('href');
+    $('.navbar-collapse').slideUp(400, function(){
+        window.location = target;
+    });
+});
     });
     // navbar bg change on scroll
     $(window).scroll(function(){
