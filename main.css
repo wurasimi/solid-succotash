@@ -788,11 +788,10 @@ section{
 }
 
 /* Mobile layout */
-@media (max-width: 768px){
-        text-align: center;
-        font-size: 25px;
-        padding: 10px;
-}
+@media (max-width: 768px) {
+  .afsa-section {
+    padding: 0;
+  }
   .afsa-section .container {
     display: flex;
     flex-direction: column;
