@@ -788,10 +788,17 @@ section{
 }
 
 /* Mobile layout */
-@media (max-width: 768px) {
-  .afsa-section {
-    padding: 0;
-  }
+@media (max-width: 768px){
+    .about-title{
+        text-align: center;
+        font-size: 22px;
+        padding: 10px 16px;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        margin: 0;
+    }
+}
   .afsa-section .container {
     display: flex;
     flex-direction: column;
