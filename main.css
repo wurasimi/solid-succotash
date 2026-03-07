@@ -897,21 +897,13 @@ section{
 }
 
 /* Small screens (phones) */
-@media (max-width:768px){
-    .about-title{
-        font-size:22px;   /* smaller text for phone */
-        padding:12px;
-        text-align:center; /* ensure it stays centered */
-    }
-}
 @media (max-width: 768px){
     .about-title{
-        text-align: center;
-        font-size: 22px;
+        text-align: center !important;
+        font-size: 25px;
         padding: 10px 16px;
-        width: 100%;
-        display: block;
+        width: 100% !important;
+        display: block !important;
         box-sizing: border-box;
-        margin: 0;
     }
 }
