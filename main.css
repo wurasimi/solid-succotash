@@ -888,9 +888,17 @@ section{
 /* Wherever your ABOUT IAF title is */
 
 .about-title{
-    padding: 12px 15px;
-    margin: 0;
-    font-size: 22px;
-    font-weight: 600;
-    text-align: center;
+    background:#e5e5e5;
+    padding:12px 15px;
+    font-size:30px;
+    font-weight:600;
+}
+
+/* Small screen fix */
+@media (max-width: 768px){
+    .about-title{
+        text-align:center;
+        font-size:25px;
+        padding:10px;
+    }
 }
