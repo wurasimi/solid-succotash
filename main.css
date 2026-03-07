@@ -888,8 +888,8 @@ section{
 /* Wherever your ABOUT IAF title is */
 .section-title {
   text-align: center;
-  top:10px; 
-padding: 20px 30px;
+  top: 30px; 
+  padding: 20px 30px;
   margin: 0 auto;
 }
 
