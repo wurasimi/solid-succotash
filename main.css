@@ -789,15 +789,9 @@ section{
 
 /* Mobile layout */
 @media (max-width: 768px){
-    .about-title{
         text-align: center;
-        font-size: 22px;
-        padding: 10px 16px;
-        width: 100%;
-        display: block;
-        box-sizing: border-box;
-        margin: 0;
-    }
+        font-size: 25px;
+        padding: 10px;
 }
   .afsa-section .container {
     display: flex;
