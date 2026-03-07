@@ -885,3 +885,15 @@ section{
     box-sizing: border-box !important;
   }
 }
+/* Wherever your ABOUT IAF title is */
+.section-title {
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    padding: 15px 20px;
+    margin-bottom: 15px;
+  }
+}
