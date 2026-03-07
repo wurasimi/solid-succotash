@@ -889,21 +889,52 @@ section{
 
 .about-title{
     background:#e5e5e5;
-    padding:15px;
+    padding:12px 15px;
     font-size:30px;
     font-weight:600;
-    text-align:center;   /* center on all screens */
-    width:100%;
+    text-align: center;  /* base - covers all screens */
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
 }
 
-/* Small screens (phones) */
+/* Small phones */
+@media (max-width: 480px){
+    .about-title{
+        font-size: 20px !important;
+        padding: 10px 12px !important;
+        text-align: center !important;
+    }
+}
+
+/* Large phones */
+@media (max-width: 576px){
+    .about-title{
+        font-size: 22px !important;
+        padding: 10px 14px !important;
+        text-align: center !important;
+    }
+}
+
+/* Tablets */
 @media (max-width: 768px){
     .about-title{
+        font-size: 25px !important;
+        padding: 10px 16px !important;
         text-align: center !important;
-        font-size: 25px;
-        padding: 10px 16px;
         width: 100% !important;
         display: block !important;
-        box-sizing: border-box;
+    }
+}
+
+/* Large tablets */
+@media (max-width: 992px){
+    .about-title{
+        font-size: 27px !important;
+        padding: 11px 15px !important;
+        text-align: center !important;
+        width: 100% !important;
+        display: block !important;
     }
 }
