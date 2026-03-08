@@ -863,7 +863,8 @@ section{
     height: 200px !important;
   }
   .afsa-card {
-    width: calc(100% - 24px) !important;  /* 👈 add this */
-    margin: 0 12px !important;             /* 👈 add this */
+    width: calc(100% - 32px) !important;
+    margin: 0 16px 16px 16px !important;  /* 👈 also adds space at bottom */
+    border-radius: 8px !important;
   }
 }
