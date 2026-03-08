@@ -787,43 +787,6 @@ section{
   }
 }
 
-/* Mobile layout */
-@media (max-width: 768px) {
-  .afsa-section {
-    padding: 0;
-  }
-  .afsa-section .container {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 100%;
-  }
-  .afsa-image {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 0;
-    position: static;
-    left: 0;
-  }
-  .afsa-card {
-    position: static !important;
-    top: auto !important;
-    left: auto !important;
-    transform: none !important;
-    width: 100%;
-    margin: 0;
-    border-radius: 0;
-    padding: 20px 16px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    height: auto !important;
-    overflow: visible !important;
-    box-sizing: border-box;
-  }
-}
-
 /* Shared styles */
 .afsa-title {
   font-weight: bold;
@@ -841,12 +804,8 @@ section{
   word-wrap: break-word;
   text-align: justify;
 }
-@media (max-width: 768px) {
-  .text-container {
-    font-size: 14px;
-    padding: 0;
-  }
-}
+
+/* Mobile layout */
 @media (max-width: 768px) {
   .afsa-section {
     padding: 0 !important;
@@ -860,13 +819,14 @@ section{
     max-width: 100% !important;
   }
   .afsa-image {
-    width: 100% !important;
+    width: calc(100% - 32px) !important;  /* adds left & right space */
+    margin: 0 16px !important;             /* left & right space */
     height: 250px !important;
     object-fit: cover !important;
+    border-radius: 8px !important;
     position: static !important;
     left: 0 !important;
     top: 0 !important;
-    border-radius: 0 !important;
     transform: none !important;
   }
   .afsa-card {
@@ -884,6 +844,15 @@ section{
     overflow: visible !important;
     box-sizing: border-box !important;
   }
+  .text-container {
+    font-size: 14px;
+    padding: 0;
+  }
 }
-/* Wherever your ABOUT IAF title is */
-
+@media (max-width: 480px) {
+  .afsa-image {
+    width: calc(100% - 24px) !important;  /* slightly less spacing */
+    margin: 0 12px !important;
+    height: 200px !important;             /* shorter image on small screens */
+  }
+}
